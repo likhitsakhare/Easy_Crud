@@ -10,6 +10,9 @@ spec:
       image: sakhare1181/easy-frontend:latest
       ports:
         - containerPort: 80
+      env:
+        - name: API_BASE_URL
+          value: http://backend-svc:8080
 ---
 kind: Service
 apiVersion: v1
