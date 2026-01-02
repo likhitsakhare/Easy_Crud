@@ -10,14 +10,13 @@ spec:
       image: sakhare1181/easy-backend:latest
       ports:
         - containerPort: 8080
-      env:
-        - name: SPRING_DATASOURCE_URL
-          value: jdbc:mariadb://db-svc:3306/student_db
-        - name: SPRING_DATASOURCE_USERNAME
-          value: root
-        - name: SPRING_DATASOURCE_PASSWORD
-          value: cloudblitz
-
+    #  env:
+    #   - name: SPRING_DATASOURCE_URL
+    #      value: jdbc:mariadb://db-svc:3306/student_db
+    #    - name: SPRING_DATASOURCE_USERNAME
+    #      value: root
+    #    - name: SPRING_DATASOURCE_PASSWORD
+    #      value: cloudblitz
 ---
 apiVersion: v1
 kind: Service
